@@ -11,7 +11,7 @@ function draw_model(brand, index) {
   }
   if (model.files) {
     for (var f in model.files) {
-      template += '<p><span class="glyphicon glyphicon-file"><a href="cards/vector/'+model.files[f]+'">'+model.files[f]+'</a></p>';
+      template += '<p><i class="glyphicon glyphicon-file"></i><a href="cards/vector/'+model.files[f]+'">'+model.files[f]+'</a></p>';
     }
   }
 

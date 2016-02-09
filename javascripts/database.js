@@ -36,13 +36,13 @@ var models = {
       name: 'Pkf.85 FALKE',
       description: 'MK01 Antigravity Armored Rider',
       brand: 'Hasegawa',
-      year: 2006,
+      year: 2009,
       images: {
-        //'printable': 'pk85f_falke_mk01_hasegawa.png',
+        'printable': 'pk85f_falke_mk01_hasegawa.jpg',
         'source': 'pk85f_falke_mk01_hasegawa.jpg'
       },
       files: {
-        //'ai': 'pk85f_falke_mk01_hasegawa.png'
+        'ai': 'pk85f_falke_mk01_hasegawa.ai'
       }
       //,user: {name:'leninanduin', url:'https://www.reddit.com/user/LeninAnduin/'}
     },
