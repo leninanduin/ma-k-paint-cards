@@ -1,7 +1,7 @@
 function draw_model(brand, index) {
   var model = models[brand][index];
   var template = '<div class="col-md-12 model">';
-  template += '<div class="col-md-3 model-info">';
+  template += '<div class="col-md-4 col-xs-4 model-info">';
   template += '<h2>'+model.name+'</h2>';
   template += '<h4>'+model.description+'</h4>';
   template += '<p>Brand: '+model.brand+'</p>';
@@ -19,8 +19,8 @@ function draw_model(brand, index) {
 
   for (var img in model.images){
     var source_url = 'cards/'+img+'/'+model.images[img];
-    template += '<div class="col-md-4 model-image">';
-    template += '<a href="'+source_url+'" target="_blank"><img src="'+source_url+'"><span class="img_name">'+img+'</span></a>';
+    template += '<div class="col-md-5 col-xs-7 model-image">';
+    template += '<a href="'+source_url+'" target="_blank"><img alt="'+model.name+' - '+model.brand+'" src="'+source_url+'"><span class="img_name">'+img+'</span></a>';
     template += '</div>';
   }
   template += '</div>';
@@ -36,7 +36,7 @@ function draw_brand_menu() {
     template += '<ul>';
     for (var m in brand) {
       template += '<li><a class="model" onclick="draw_model(\''+brand_name+'\', \''+m+'\')">'+brand[m].name;
-      template += ' <span class="desc">'+brand[m].description+'</span></a></li>';
+      template += '<br><span class="desc">'+brand[m].description+'</span></a></li>';
     }
     template += '</ul>';
     template += '</li>';

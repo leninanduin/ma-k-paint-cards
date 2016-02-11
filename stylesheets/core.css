@@ -1,3 +1,11 @@
+html, body, #content {
+  height: 100%;
+}
+
+footer {
+  height: 5%;
+}
+
 body {
   background: #FFE8A0;
   color: #333;
@@ -10,6 +18,8 @@ header {
   text-align: center;
   width: 100%;
   margin: 0 !important;
+  height: auto;
+  max-height: 100px;
 }
 
 header h1 {
@@ -36,17 +46,20 @@ a:hover {
 #main {
   border-radius: 5px;
   border: 4px solid #701811;
+  height: 77%;
   margin: 15px auto;
-  padding: 10px;
+  max-height: 595px;
   max-width: 1200px;
+  padding: 10px;
 }
 
 .model {
   padding: 0;
+  height: 95%;
 }
 
 .model img {
-  max-width: 100%;
+  height: 95%;
 }
 
 li.brand_name {
@@ -62,15 +75,19 @@ a.model {
 a.model span.desc{
   color: #333;
   font-style: italic;
-  font-size: 80%;
+  font-size: 95%;
 }
 
 #sidebar {
-
+  padding: 0 0 15px 25px;
 }
 
 #content {
   border-right: 4px dashed #701811;
+}
+
+#description {
+  height: auto;
 }
 
 #model-brand-menu {
@@ -81,6 +98,7 @@ a.model span.desc{
   border-top: 4px dashed #701811;
   margin: 25px -19px 0 0;
   padding: 25px 0 15px 0;
+  height: 79%;
 }
 
 .model-info {
@@ -95,6 +113,8 @@ div.model-image {
   margin: 0 15px;
   padding: 0;
   position: relative;
+  height: 100%;
+  text-align: center;
 }
 
 span.img_name {
@@ -109,4 +129,69 @@ span.img_name {
   position: absolute;
   text-align: center;
   width: 100%;
+}
+
+@media (max-width:991px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  #content {
+    border: none;
+  }
+
+  #main {
+    width: 95%;
+  }
+}
+
+#sidebar.mobile {
+  background: #701811;
+  color: #FFE8A0;
+  font-size: 125%;
+  left: 0;
+  margin-left: -100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: .9;
+}
+
+#sidebar.mobile a.model span.desc {
+  color: #FFE8A0;
+}
+
+#sidebar.mobile h3 {
+  margin-top: 0;
+}
+
+.mobile-controls {
+  z-index: 11;
+}
+
+.mobile-controls button {
+  background: none;
+  border: 0;
+}
+
+.mobile-controls .close {
+  color: #FFE8A0;
+  text-shadow: none;
+  opacity: 1;
+  float: right;
+  display: none;
+}
+
+.mobile-controls .menu {
+  float: left;
+}
+
+header .mobile-controls {
+  float: left;
+  margin: 10px 0;
+  width: 95%;
+  position: absolute;
 }
