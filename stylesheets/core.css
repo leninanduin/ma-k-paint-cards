@@ -133,7 +133,6 @@ span.img_name {
 
 @media (max-width:991px) {
   header h1 {
-    font-size: 22px;
   }
 
   #content {
@@ -141,7 +140,7 @@ span.img_name {
   }
 
   #main {
-    width: 95%;
+    width: 85%;
   }
 }
 
@@ -170,6 +169,7 @@ span.img_name {
 
 .mobile-controls {
   z-index: 11;
+  font-size: 22px;
 }
 
 .mobile-controls button {
