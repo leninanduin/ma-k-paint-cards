@@ -105,6 +105,10 @@ a.model span.desc{
   padding-left: 0;
 }
 
+.model-info .info {
+  margin-bottom: 20px;
+}
+
 .model-info h2 {
   margin-top: 0;
 }

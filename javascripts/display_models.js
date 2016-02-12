@@ -1,7 +1,6 @@
 function draw_model(brand, index) {
   var model = models[brand][index];
-  var template = '<div class="col-md-12 model">';
-  template += '<div class="col-md-4 col-xs-4 model-info">';
+  var template = '';
   template += '<h2>'+model.name+'</h2>';
   template += '<h4>'+model.description+'</h4>';
   template += '<p>Brand: '+model.brand+'</p>';
@@ -14,17 +13,15 @@ function draw_model(brand, index) {
       template += '<p><i class="glyphicon glyphicon-file"></i><a href="cards/vector/'+model.files[f]+'">'+model.files[f]+'</a></p>';
     }
   }
-
-  template += '</div>';
+  $('.model-info .info').html(template);
+  template = '';
 
   for (var img in model.images){
     var source_url = 'cards/'+img+'/'+model.images[img];
-    template += '<div class="col-md-5 col-xs-7 model-image">';
-    template += '<a href="'+source_url+'" target="_blank"><img alt="'+model.name+' - '+model.brand+'" src="'+source_url+'"><span class="img_name">'+img+'</span></a>';
-    template += '</div>';
+    template += '<a href="'+source_url+'" target="_blank"><img class="model" alt="'+model.name+' - '+model.brand+'" src="'+source_url+'"></a>';
   }
   template += '</div>';
-  $('#model-container').html('').append(template);
+  $('.model-image').html(template);
 }
 
 function draw_brand_menu() {

@@ -16,7 +16,7 @@ function _resize() {
 }
 
 $(window).resize(function(){
-    _resize()
+    _resize();
 });
 
 $(function(){
@@ -33,4 +33,9 @@ $(function(){
         $('.mobile-controls .menu').show();
         $('.mobile-controls .close').hide();
     });
+
+    $(document).on('click', '#sidebar.mobile a', function(){
+        $('.mobile-controls .close').click();
+    });
 });
+

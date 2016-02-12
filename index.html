@@ -24,6 +24,14 @@
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=399986656790962";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <header class="row">
       <div class="mobile-controls hidden-md hidden-lg">
         <button type="button" class="close" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove"></span></button>
@@ -39,7 +47,15 @@
           <p>This cards are intented to help modelers to test color schemes before paint is applied to the model.</p>
           <p>Feel free to reuse any file, if you are interested in contribute to this database send your files to <a href="mailto:ma.k.paint.cards@gmail.com?Subject=card%20contribution">ma.k.paint.cards@gmail.com</a>.</p>
         </div>
-        <div id="model-container" class="row"></div>
+        <div id="model-container" class="row">
+          <div class="col-md-12 model">
+            <div class="col-md-4 col-xs-4 model-info">
+              <div class="info"></div>
+              <div class="fb-like" data-href="http://leninanduin.github.io/ma-k-paint-cards/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+            <div class="col-md-5 col-xs-7 model-image"></div>
+          </div>
+        </div>
       </div>
       <div class="col-md-3" id="sidebar">
         <h3>Models in the database</h3>
