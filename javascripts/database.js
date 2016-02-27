@@ -7,10 +7,10 @@ var models = {
       year: 1997,
       images: {
         'printable': 'safs_fireball_nitto.jpg',
-        //'source': 'safs_fireball_nitto.jpg'
       },
       files: {
-        'ai': 'safs_fireball_nitto.ai'
+        'vector': 'safs_fireball_nitto.ai',
+        'printable': 'safs_fireball_nitto.jpg'
       },
       user: {name:'leninanduin', url:'https://www.reddit.com/user/LeninAnduin/'}
     }
@@ -39,10 +39,10 @@ var models = {
       year: 2009,
       images: {
         'printable': 'pk85f_falke_mk01_hasegawa.jpg',
-        //'source': 'pk85f_falke_mk01_hasegawa.jpg'
       },
       files: {
-        'ai': 'pk85f_falke_mk01_hasegawa.ai'
+        'vector': 'pk85f_falke_mk01_hasegawa.ai',
+        'printable': 'pk85f_falke_mk01_hasegawa.jpg'
       }
       //,user: {name:'leninanduin', url:'https://www.reddit.com/user/LeninAnduin/'}
     }
@@ -61,23 +61,35 @@ var models = {
       }
       //user: {name:'leninanduin', url:'https://www.reddit.com/user/LeninAnduin/'}
     }*/
-  ]
-  /*,
-
+  ] ,
   'Wave': [
     {
-      name: 'RAPTOR',
-      description: 'S.A.F.S. Mk-III',
+      name: 'SEAPIG',
+      description: 'Snake Eye Reconnaissance Type',
       brand: 'Wave',
-      year: 1997,
+      year: 2014,
       images: {
-        //'printable': 'safs_mkIII_raptor_wave.png',
-        //'source': 'safs_mkIII_raptor_wave.jpg'
+        'printable': 'seapig_snake_eye_reconnaissance_type_wave.jpg'
       },
       files: {
-        //'ai': 'safs_mkIII_raptor_wave.png'
-      }
-      //user: {name:'leninanduin', url:'https://www.reddit.com/user/LeninAnduin/'}
+        'printable': 'seapig_snake_eye_reconnaissance_type_wave.jpg',
+        'vector': 'seapig_snake_eye_reconnaissance_type_wave.psd',
+      },
+      user: {name:'leninanduin', url:'https://www.reddit.com/user/LeninAnduin/'}
     },
-  ]*/
+    {
+      name: 'GLADIATOR',
+      description: 'Heavy Armored Fighting Suit [late production type]',
+      brand: 'Wave',
+      year: 2015,
+      images: {
+        'printable': 'gladiator_late_production_wave.jpg'
+      },
+      files: {
+        'printable': 'gladiator_late_production_wave.jpg',
+        'vector': 'gladiator_late_production_wave.psd',
+      },
+      user: {name:'leninanduin', url:'https://www.reddit.com/user/LeninAnduin/'}
+    }
+  ]
 };

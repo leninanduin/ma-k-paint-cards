@@ -6,11 +6,13 @@ function _resize() {
         $('#sidebar')
         .addClass('mobile')
         .css('top', h_header)
+        .css('margin-left', '-100%')
         .css('height', h_body-h_header);
     } else if (w_body >= 991) {
         $('#sidebar')
         .removeClass('mobile')
         .css('top', 0)
+        .css('margin-left', 0)
         .css('height', '100%');
     }
 }

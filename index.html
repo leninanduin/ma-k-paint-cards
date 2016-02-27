@@ -51,20 +51,56 @@
     </header>
 
     <section id="main" class="row">
-      <div class="col-md-9" id="content">
-        <div id="description" class="">
+      <div class="col-md-9" id="site-info">
+        <div id="description" class="col-md-5">
           <h3>Printable paint cards for Maschinen Krieger models.</h3>
           <p>This cards are intented to help modelers to test color schemes before paint is applied to the model.</p>
           <p>Feel free to reuse any file, if you are interested in contribute to this database send your files to <a href="mailto:ma.k.paint.cards@gmail.com?Subject=card%20contribution" onclick="ga('send', 'event', 'Page link', 'Send files');">ma.k.paint.cards@gmail.com</a>.</p>
-        </div>
-        <div id="model-container" class="row">
-          <div class="col-md-12 model">
-            <div class="col-md-4 col-xs-4 model-info">
-              <div class="info"></div>
-              <div class="fb-like" data-href="http://leninanduin.github.io/ma-k-paint-cards/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-            </div>
-            <div class="col-md-5 col-xs-7 model-image"></div>
+
+          <div class="fb-like" data-href="http://leninanduin.github.io/ma-k-paint-cards/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+          <!-- Begin MailChimp Signup Form -->
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+          <div id="mc_embed_signup" class="">
+            <form action="//github.us12.list-manage.com/subscribe/post?u=5f5d032ba496b394b286624a9&amp;id=5b1efa2ccd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5f5d032ba496b394b286624a9_5b1efa2ccd" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            <p>
+              Powered by
+              <a href="http://eepurl.com/bR6Do5" title="MailChimp - email marketing made easy and fun">
+                <img src="images/MailChimp_Logo_NoBackground_Dark.png" width="100">
+              </a>
+            </p>
           </div>
+          <!--End mc_embed_signup-->
+        </div>
+        <div id="model-container" class="col-md-7">
+            <div class="col-md-12 col-xs-12 model-info">
+              <div class="info">
+                <h2 class="name"></h2>
+                <h4 class="description"></h4>
+                <div class="col-md-3 col-xs-4" style="padding: 0;">
+                  <p class="brand"></p>
+                  <p class="year"></p>
+                  <p class="user"></p>
+                </div>
+                <div class="col-md-9 col-xs-8 model-files">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-11 col-xs-10 model-image">
+              <a href="" target="_blank" onclick="ga('send', 'event', 'Model', 'Card download');" class="overlay">
+                <i class="glyphicon glyphicon-zoom-in"></i>
+              </a>
+              <a href="" target="_blank" onclick="ga('send', 'event', 'Model', 'Card download');">
+                <img class="model-print" alt="" src="">
+              </a>
+            </div>
         </div>
       </div>
       <div class="col-md-3" id="sidebar">

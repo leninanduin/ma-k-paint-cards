@@ -1,4 +1,4 @@
-html, body, #content {
+html, body, #site-info {
   height: 100%;
 }
 
@@ -53,13 +53,9 @@ a:hover {
   padding: 10px;
 }
 
-.model {
+img.model-print {
   padding: 0;
-  height: 95%;
-}
-
-.model img {
-  height: 95%;
+  width: 100%;
 }
 
 li.brand_name {
@@ -67,12 +63,12 @@ li.brand_name {
   font-weight: bold;
 }
 
-a.model {
+a.model-name {
   cursor: pointer;
   font-weight: normal;
 }
 
-a.model span.desc{
+a.model-name span.desc{
   color: #333;
   font-style: italic;
   font-size: 95%;
@@ -82,12 +78,13 @@ a.model span.desc{
   padding: 0 0 15px 25px;
 }
 
-#content {
+#site-info {
   border-right: 4px dashed #701811;
 }
 
 #description {
-  height: auto;
+  border-right: 4px dashed #701811;
+  height: 100%;
 }
 
 #model-brand-menu {
@@ -95,14 +92,12 @@ a.model span.desc{
 }
 
 #model-container {
-  border-top: 4px dashed #701811;
   margin: 25px -19px 0 0;
-  padding: 25px 0 15px 0;
-  height: 79%;
+  height: 95%;
 }
 
 .model-info {
-  padding-left: 0;
+  max-height: 35%;
 }
 
 .model-info .info {
@@ -113,12 +108,41 @@ a.model span.desc{
   margin-top: 0;
 }
 
+i.glyphicon.glyphicon-file {
+  vertical-align: super;
+}
+
+a.file {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 90%;
+  display: inline-block;
+}
+
 div.model-image {
-  margin: 0 15px;
+  max-height: 65%;
+  overflow: hidden;
   padding: 0;
-  position: relative;
+  margin: 0px 5%;
+}
+
+div.model-image .overlay {
   height: 100%;
+  position: absolute;
   text-align: center;
+  width: 100%;
+}
+
+div.model-image .overlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+div.model-image .overlay i {
+  font-size: 22px;
+  color: white;
+  margin: 39% 0;
 }
 
 span.img_name {
@@ -139,12 +163,23 @@ span.img_name {
   header h1 {
   }
 
-  #content {
+  #site-info {
     border: none;
+    height: auto;
   }
 
   #main {
-    width: 85%;
+    width: 90%;
+    height: auto;
+    max-height: none;
+  }
+
+  #description {
+    border: none;
+  }
+
+  #mc_embed_signup {
+    border: none;
   }
 }
 
@@ -163,7 +198,7 @@ span.img_name {
   opacity: .9;
 }
 
-#sidebar.mobile a.model span.desc {
+#sidebar.mobile a.model-name span.desc {
   color: #FFE8A0;
 }
 
@@ -199,3 +234,15 @@ header .mobile-controls {
   width: 95%;
   position: absolute;
 }
+
+#mc_embed_signup {
+  background: transparent;
+  border-bottom: 4px dashed #701811;
+  border-top: 4px dashed #701811;
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif;
+  margin: 15px 0;
+  padding: 15px 0;
+}
+
+#mc_embed_signup form { padding: 0 !important }
