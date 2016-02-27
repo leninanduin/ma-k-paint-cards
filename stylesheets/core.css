@@ -181,6 +181,10 @@ span.img_name {
   #mc_embed_signup {
     border: none;
   }
+
+  * {
+    font-size: 3.1vw;
+  }
 }
 
 #sidebar.mobile {
